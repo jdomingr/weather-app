@@ -1,0 +1,12 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card-item{
+    background: #2f353b;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}

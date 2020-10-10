@@ -1,0 +1,10 @@
+.dashboard {
+    background: #474a52;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 70%;
+    justify-content: center;
+    align-items: center;
+}
