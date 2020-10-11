@@ -1,9 +1,10 @@
 import React from 'react'
 
-export const CurrentWeather = () => {
+export const CurrentWeather = ({ weather }) => {
     return (
-        <div>
-            <h1>Current Weather</h1>
+        <div className="container-current-temp">
+            <h1>{weather.the_temp}</h1>
+    <       p> {`${(weather.min_temp).toFixed(0)} - ${(weather.max_temp).toFixed(0)}`} </p>
         </div>
     )
 }

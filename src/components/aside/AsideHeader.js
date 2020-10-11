@@ -1,16 +1,18 @@
-import React from 'react'
+import React from 'react';
 
 
-export const AsideHeader = () => {
+export const AsideHeader = ({handleOnClickSearch}) => {
 
     return (
         <div className="header">
-            <div className="">
-                <button className="btn-default">Search for places</button>
-            </div>
-            <div className="">
-                <button className="btn-rounded"><i className="material-icons">gps_fixed</i></button>
-            </div>
+         
+            <button className="btn-default"
+                onClick = {handleOnClickSearch} >
+                Search for places
+            </button>
+    
+            <button className="btn-rounded"><i className="material-icons">gps_fixed</i></button>
+           
         </div>
     )
 }

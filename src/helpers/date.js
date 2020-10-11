@@ -1,7 +1,7 @@
 export const getCurrentDate = () => {
     const date = new Date();
-    let day = date.getDay().toString();
-    let month = (date.getMonth()+1).toString();
+    let day = date.getDate().toString();
+    let month = (date.getMonth() + 1).toString();
     
     if(day.length === 1){
         day = day.padStart(2,'0');
@@ -11,6 +11,8 @@ export const getCurrentDate = () => {
         month = month.padStart(2,'0');
     }
 
-    return `${day}/${month}/${date.getFullYear()}`;
+    let year = date.getFullYear();
+    
+    return `${year}/${month}/${day}`;
 
 }
