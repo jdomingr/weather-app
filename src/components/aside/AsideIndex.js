@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Aside } from './Aside';
 import { SearchLocation } from './SearchLocation';
-import './aside.css';
+
 export const AsideIndex = ( {weather} ) => {
 
     const [showSearch, setShowSearch] = useState(false);
@@ -11,12 +11,12 @@ export const AsideIndex = ( {weather} ) => {
     }
 
     return (
-        <>
+        <aside className="aside__content"> 
             {
                 (!showSearch) 
                 ? <Aside weather = { weather } handleOnClickSearch = { handleOnClickSearch } /> 
                 : <SearchLocation setShowSearch = { setShowSearch }/>
             }
-        </>
+        </aside>
     )
 }

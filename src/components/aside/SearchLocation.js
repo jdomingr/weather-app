@@ -12,7 +12,7 @@ export const SearchLocation = ( {setShowSearch} ) => {
         setShowSearch(false);
     }
     return (
-        <div className="aside">
+        <div className="aside__sidebar">
             <div className="search-container">
                 <input type="text" className="input-search"
                 name="search" 
@@ -20,10 +20,10 @@ export const SearchLocation = ( {setShowSearch} ) => {
                 onChange = {handleOnChange} 
                 placeholder="Search location"/>
 
-                <button className="btn-aside"> Search </button>
+                <button className="aside__btn pointer"> Search </button>
 
 
-                <button className="btn-aside"
+                <button className="aside__btn pointer"
                 onClick={ handleGoBack }>Go back</button>
              
             </div>

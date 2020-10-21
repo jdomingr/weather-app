@@ -28,7 +28,7 @@ function App() {
 
 
   return (
-    <div className="container">
+    <div className="main__content">
       { (!isLoading) ? 'Loading...'
       
       : 
