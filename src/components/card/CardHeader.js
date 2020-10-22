@@ -1,9 +1,10 @@
 import React from 'react'
+import { CardContainer } from './CardContainer'
 
-export const CardHeader = () => {
+export const CardHeader = ( {weekWeather} ) => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <CardContainer weekWeather = {weekWeather} />
+        </>
     )
 }

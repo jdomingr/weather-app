@@ -1,13 +1,14 @@
 import React from 'react'
 import { CardItem } from './CardItem';
-import './card.css';
-export const CardContainer = () => {
+export const CardContainer = ( {weekWeather} ) => {
     return (
-        <div className="card">
-            <CardItem />
-            <CardItem />
-            <CardItem />
-            <CardItem />
+        <div className="card__container">
+            {
+                weekWeather.map( weather => (
+                    <CardItem key = {weather.id} weather = {weather} />
+                ))
+            }
+            
         </div>
     )
 }

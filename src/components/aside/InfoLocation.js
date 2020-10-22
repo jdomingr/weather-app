@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const InfoLocation = () => {
+export const InfoLocation = ({location}) => {
     return (
         <div>
-            <h1>Test</h1>
+            <h1>{location}</h1>
         </div>
     )
 }

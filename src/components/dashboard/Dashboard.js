@@ -1,11 +1,12 @@
 import React from 'react'
 import { CardContainer } from '../card/CardContainer';
+import { CardHeader } from '../card/CardHeader';
 
-export const Dashboard = () => {
+export const Dashboard = ( {weekWeather} ) => {
     return (
         <main className="main__dashboard">
-            <h1>Dashboard</h1>
-            <CardContainer />
+            <CardHeader weekWeather = {weekWeather}/>
+            {/* <CardContainer /> */}
         
         </main>
     )

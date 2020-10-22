@@ -29,7 +29,7 @@ export const getTodayWeather = async(woeid) => {
 export const getCurrentWeekWeather = async(woeid) => {
     try{
         const result = await axios.get(`https://cors-anywhere.herokuapp.com/metaweather.com/api/location/${woeid}`);
-        console.log(result)
+        return result.data;
     }catch(error){
         console.log(error)
     }

@@ -1,10 +1,11 @@
 import React from 'react'
-import './card.css';
 
-export const CardItem = () => {
+export const CardItem = ({weather}) => {
+    console.log(weather)
     return (
-        <div className="card-item">
-            <h1>Ejemplo</h1>
+        <div className="card__item">
+            <img src={`https://www.metaweather.com/static/img/weather/` + weather.weather_state_abbr + `.svg`} alt={weather.weather_state_abbr}/>
+            <h1>{weather.the_temp.toFixed(2)}</h1>
         </div>
     )
 }
