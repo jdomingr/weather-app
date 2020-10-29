@@ -1,12 +1,12 @@
 import React from 'react'
-import { CardContainer } from '../card/CardContainer';
-import { CardHeader } from '../card/CardHeader';
+import { Header } from './Header';
+import { Highlights } from './Highlights';
 
-export const Dashboard = ( {weekWeather} ) => {
+export const Dashboard = ( {weekWeather, highlight} ) => {
     return (
         <main className="main__dashboard">
-            <CardHeader weekWeather = {weekWeather}/>
-            {/* <CardContainer /> */}
+            <Header weekWeather = {weekWeather} />
+            <Highlights highlight = {highlight} />
         
         </main>
     )

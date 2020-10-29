@@ -16,3 +16,33 @@
     border-radius: 4px;
     box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
 }
+
+.card__item-title {
+    font-size: 12px;
+    text-align: center;
+}
+
+.card__item-footer {
+    font-size: 10px;
+}
+
+.card__highlight-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card__highlight-item{
+    display: flex;
+    flex-direction: column;
+    background-color: $primary;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    justify-content: space-around;
+    align-items: center;
+}

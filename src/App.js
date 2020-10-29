@@ -38,7 +38,7 @@ function App() {
       : 
       <>
         <AsideIndex weather = { data } location = {currentLocation}/>
-        <Dashboard weekWeather = {weekWeather}/>
+        <Dashboard weekWeather = {weekWeather} highlight = {data}/>
       </>
      }
     </div>
